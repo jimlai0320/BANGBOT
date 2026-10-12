@@ -1,0 +1,19 @@
+BANG! Dice BOT v0.6.8 素材修正版（承接 v0.6.7）
+
+問題原因：v0.6.7 的 assets/cards 只有 6 張真的換過圖，其他10張仍是舊版。
+現在：更新 15 張角色卡為西部完整卡面，包括 Rose Doolan 蘿絲・杜蘭。
+提醒：Rose 是本次暫用修正卡（完整西部版型，9血，射擊距離+1），正式美術可再確認。
+例外：Pedro Ramirez 佩德羅保留原卡。原先新生成的佩德羅與 El Gringo 畫成同一人物，不應直接當作正式版。
+其餘 15 張均已替換至 BOT 實際讀取的 assets/cards/<key>.png。
+全部原有 4 張剪影身分卡、身分規則說明、3-8人角色規則、牌桌、骰子動畫、file_id 快取均保留。
+新增 BOT 私訊 /assetversion：核對程式與蘿絲素材版本。
+新增 BOT 私訊 /previewcard rose_doolan：無需開局，預覽程式實際傳送的那張圖。
+例：/previewcard lucky_duke, /previewcard jesse_jones。
+
+安裝：務必先關閉舊 BOT，不要在舊資料夾按 START.bat。
+完整解壓本 ZIP，於新版資料夾重新設定 BOT_TOKEN 並執行 START.bat。
+同個 Token 不要同時啟動兩份 BOT。
+啟動後私訊 /assetversion 應顯示 v0.6.8。
+私訊 /previewcard rose_doolan 核對蘿絲的圖片。
+舊 file_id 快取不會干擾新版圖片：快取鍵會包含圖片 SHA256 雜湊值。
+新素材第一次需要上傳，之後使用 file_id 加快發送。

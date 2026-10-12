@@ -1,0 +1,26 @@
+BANG! 骰子版 Telegram BOT v0.6.6
+基準：使用者提供的 v0.6.5 完整整合包。
+
+本次正式替換的 5 張角色卡（非重新產圖、未用程式在卡片上覆蓋文字）：
+assets/cards/el_gringo.png       = 艾爾・格林哥（7 血）
+assets/cards/jesse_jones.png     = 傑西・瓊斯（9 血）
+assets/cards/jourdonnais.png    = 喬杜奈斯（7 血）
+assets/cards/vulture_sam.png    = 禿鷹山姆（9 血）
+assets/cards/willy_the_kid.png  = 威利小子（8 血）
+
+同步統一程式 data.py 顯示名稱：
+「喬丹奈斯」→「喬杜奈斯」
+「小子威利」→「威利小子」
+
+其他角色卡、4 張剪影身分卡、牌桌 UI、頭像、骰子動畫及遊戲玩法均保留 v0.6.5。
+程式已實作的 Telegram photo file_id 快取使用圖片內容 SHA-256 作為 key；
+替換圖片後快取 key 會自動改變，不會誤用舊版本圖。
+
+使用方式：
+1. 解壓縮整包，複製 BOT_TOKEN 設定（勿公開 Token）。
+2. 關閉舊 BOT，使用新資料夾中的 START.bat 啟動。
+3. 私訊 BOT 執行一次 /cacheassets，預先上傳全部角色/身分卡，之後發圖更順。
+4. 也可不用預先執行：第一次發送新卡會自動上傳並記住 file_id。
+5. v0.6.5 舊資料夾不要同時啟動，避免同一隻 Telegram Bot 被重複 polling。
+
+注意：角色卡圖片僅顯示原始最大生命值；警長 +2 生命值仍由程式在開局處理。

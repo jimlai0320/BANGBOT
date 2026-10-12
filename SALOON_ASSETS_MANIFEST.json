@@ -1,0 +1,293 @@
+{
+  "version": "0.8.1-art-assets",
+  "base_version": "0.8.0 (derived from 0.7.9)",
+  "art_source": "2026-10-11 user-approved asset exports",
+  "characters": {
+    "jose_delgado": {
+      "number": 17,
+      "name_zh": "荷西・德爾加多",
+      "hp": 7,
+      "card": "assets/old_saloon/cards/jose_delgado.png",
+      "avatar": "assets/old_saloon/avatars/jose_delgado.png",
+      "art_approved": true,
+      "face_to_face_check_required": true
+    },
+    "tequila_joe": {
+      "number": 18,
+      "name_zh": "龍舌蘭喬",
+      "hp": 7,
+      "card": "assets/old_saloon/cards/tequila_joe.png",
+      "avatar": "assets/old_saloon/avatars/tequila_joe.png",
+      "art_approved": true,
+      "face_to_face_check_required": true
+    },
+    "apache_kid": {
+      "number": 19,
+      "name_zh": "阿帕契小子",
+      "hp": 9,
+      "card": "assets/old_saloon/cards/apache_kid.png",
+      "avatar": "assets/old_saloon/avatars/apache_kid.png",
+      "art_approved": true,
+      "face_to_face_check_required": true
+    },
+    "bill_noface": {
+      "number": 20,
+      "name_zh": "無臉比爾",
+      "hp": 9,
+      "card": "assets/old_saloon/cards/bill_noface.png",
+      "avatar": "assets/old_saloon/avatars/bill_noface.png",
+      "art_approved": true,
+      "face_to_face_check_required": true
+    },
+    "elena_fuente": {
+      "number": 21,
+      "name_zh": "艾蓮娜・富恩特",
+      "hp": 7,
+      "card": "assets/old_saloon/cards/elena_fuente.png",
+      "avatar": "assets/old_saloon/avatars/elena_fuente.png",
+      "art_approved": true,
+      "face_to_face_check_required": true
+    },
+    "vera_custer": {
+      "number": 22,
+      "name_zh": "薇拉・卡斯特",
+      "hp": 7,
+      "card": "assets/old_saloon/cards/vera_custer.png",
+      "avatar": "assets/old_saloon/avatars/vera_custer.png",
+      "art_approved": true,
+      "face_to_face_check_required": true
+    },
+    "doc_holyday": {
+      "number": 23,
+      "name_zh": "霍利戴醫生",
+      "hp": 8,
+      "card": "assets/old_saloon/cards/doc_holyday.png",
+      "avatar": "assets/old_saloon/avatars/doc_holyday.png",
+      "art_approved": true,
+      "face_to_face_check_required": true
+    },
+    "molly_stark": {
+      "number": 24,
+      "name_zh": "茉莉・史塔克",
+      "hp": 8,
+      "card": "assets/old_saloon/cards/molly_stark.png",
+      "avatar": "assets/old_saloon/avatars/molly_stark.png",
+      "art_approved": true,
+      "face_to_face_check_required": true
+    }
+  },
+  "special_roles": {
+    "sheriff_bear": {
+      "name_zh": "熊警長",
+      "base_role": "sheriff",
+      "card": "assets/old_saloon/roles/sheriff_bear.png",
+      "art_approved": true,
+      "text_rules_review_required": true
+    },
+    "deputy_good": {
+      "name_zh": "好人",
+      "base_role": "deputy",
+      "card": "assets/old_saloon/roles/deputy_good.png",
+      "art_approved": true,
+      "text_rules_review_required": true
+    },
+    "deputy_doc": {
+      "name_zh": "醫生",
+      "base_role": "deputy",
+      "card": "assets/old_saloon/roles/deputy_doc.png",
+      "art_approved": true,
+      "text_rules_review_required": true
+    },
+    "deputy_judge": {
+      "name_zh": "法官",
+      "base_role": "deputy",
+      "card": "assets/old_saloon/roles/deputy_judge.png",
+      "art_approved": true,
+      "text_rules_review_required": true
+    },
+    "outlaw_gambler": {
+      "name_zh": "賭徒",
+      "base_role": "outlaw",
+      "card": "assets/old_saloon/roles/outlaw_gambler.png",
+      "art_approved": true,
+      "text_rules_review_required": true
+    },
+    "outlaw_bad": {
+      "name_zh": "壞人",
+      "base_role": "outlaw",
+      "card": "assets/old_saloon/roles/outlaw_bad.png",
+      "art_approved": true,
+      "text_rules_review_required": true
+    },
+    "outlaw_ugly": {
+      "name_zh": "醜人",
+      "base_role": "outlaw",
+      "card": "assets/old_saloon/roles/outlaw_ugly.png",
+      "art_approved": true,
+      "text_rules_review_required": true
+    },
+    "renegade_right_hand": {
+      "name_zh": "惡魔右手",
+      "base_role": "renegade",
+      "card": "assets/old_saloon/roles/renegade_right_hand.png",
+      "art_approved": true,
+      "text_rules_review_required": true
+    },
+    "renegade_left_hand": {
+      "name_zh": "惡魔左手",
+      "base_role": "renegade",
+      "card": "assets/old_saloon/roles/renegade_left_hand.png",
+      "art_approved": true,
+      "text_rules_review_required": true
+    }
+  },
+  "saloon_dice": {
+    "loudmouth": {
+      "source_sheet": "assets/old_saloon/dice/sheets/loudmouth_six_faces_original.png",
+      "color_scheme": "warm ochre",
+      "faces": [
+        {
+          "face": "arrow",
+          "description": "箭頭",
+          "path": "assets/old_saloon/dice/loudmouth/arrow.png"
+        },
+        {
+          "face": "bullet",
+          "description": "子彈：自損 1 血",
+          "path": "assets/old_saloon/dice/loudmouth/bullet.png"
+        },
+        {
+          "face": "double_bull1",
+          "description": "雙準心 1",
+          "path": "assets/old_saloon/dice/loudmouth/double_bull1.png"
+        },
+        {
+          "face": "double_bull2",
+          "description": "雙準心 2",
+          "path": "assets/old_saloon/dice/loudmouth/double_bull2.png"
+        },
+        {
+          "face": "dynamite",
+          "description": "炸藥",
+          "path": "assets/old_saloon/dice/loudmouth/dynamite.png"
+        },
+        {
+          "face": "double_gatling",
+          "description": "雙格林機槍",
+          "path": "assets/old_saloon/dice/loudmouth/double_gatling.png"
+        }
+      ]
+    },
+    "coward": {
+      "source_sheet": "assets/old_saloon/dice/sheets/coward_six_faces_original.png",
+      "color_scheme": "cool gray beige",
+      "faces": [
+        {
+          "face": "arrow",
+          "description": "箭頭",
+          "path": "assets/old_saloon/dice/coward/arrow.png"
+        },
+        {
+          "face": "broken_arrow",
+          "description": "斷箭：歸還 1 支普通箭",
+          "path": "assets/old_saloon/dice/coward/broken_arrow.png"
+        },
+        {
+          "face": "bull1",
+          "description": "準心 1",
+          "path": "assets/old_saloon/dice/coward/bull1.png"
+        },
+        {
+          "face": "bull2",
+          "description": "準心 2",
+          "path": "assets/old_saloon/dice/coward/bull2.png"
+        },
+        {
+          "face": "beer",
+          "description": "啤酒",
+          "path": "assets/old_saloon/dice/coward/beer.png"
+        },
+        {
+          "face": "double_beer",
+          "description": "雙啤酒",
+          "path": "assets/old_saloon/dice/coward/double_beer.png"
+        }
+      ]
+    }
+  },
+  "ghost_tokens": {
+    "arrow": "assets/old_saloon/ghost/tokens/arrow.png",
+    "beer": "assets/old_saloon/ghost/tokens/beer.png",
+    "bull1": "assets/old_saloon/ghost/tokens/bull1.png",
+    "bull2": "assets/old_saloon/ghost/tokens/bull2.png",
+    "dynamite": "assets/old_saloon/ghost/tokens/dynamite.png",
+    "gatling": "assets/old_saloon/ghost/tokens/gatling.png",
+    "double": "assets/old_saloon/ghost/tokens/double.png"
+  },
+  "other": {
+    "chief_arrow": "assets/old_saloon/arrows/chief_arrow.png",
+    "ghost_icon": "assets/old_saloon/ghost/ghost_icon.png",
+    "ghost_banner": "assets/old_saloon/ghost/ghost_turn_banner.png",
+    "ghost_card": "assets/old_saloon/ghost/ghost_card.png",
+    "ghost_renegade_card": "assets/old_saloon/ghost/ghost_renegade_card.png"
+  },
+  "checksums": {
+    "assets/old_saloon/cards/jose_delgado.png": "ca294b36cfbb4e571e4dd60f6262408a488c05c218698ed8f578e1246d041257",
+    "assets/old_saloon/avatars/jose_delgado.png": "0c1858c59b075c0311d57b0d87fdde9e5dc2717293deea6074de20346193a37d",
+    "assets/old_saloon/cards/tequila_joe.png": "382cda4893487460f796e3bcdb3e9780659b3d0d07c562b1e3395a35a708fa01",
+    "assets/old_saloon/avatars/tequila_joe.png": "7c7fd050e42210ebb71ad3bf047d885c5e47c9cd1b3dee85c88651afe619999c",
+    "assets/old_saloon/cards/apache_kid.png": "64465c9e4baaa4991f603432cbb163131e0eafc350f828e1971edb3a933af67c",
+    "assets/old_saloon/avatars/apache_kid.png": "fcca46f332a4a4e2c340b21fbded790a7c5e5365d03e08d16b770fd44d290537",
+    "assets/old_saloon/cards/bill_noface.png": "c055510fc51df301a4e76a0fe12fff373b771f12878cb771cb92a65c1110e21a",
+    "assets/old_saloon/avatars/bill_noface.png": "46e4fd7d1980990e1a4d6fc2dcd77d38b3b7763608cbba035232e755237038f7",
+    "assets/old_saloon/cards/elena_fuente.png": "51efc932eaf1a39156a37c82a4a9971ff2ec4d18b9322168cd472096be9458fe",
+    "assets/old_saloon/avatars/elena_fuente.png": "00c724a309c9177ed7b155fa79d15ce12225f79bdc878d5d5ce28fb29558a042",
+    "assets/old_saloon/cards/vera_custer.png": "286b611e80a0a7ac9fff8795085ed0880a7a29a95d1518487ea04183c929bdd9",
+    "assets/old_saloon/avatars/vera_custer.png": "b0bfb852da94cd6f536239dfe6458ca8bb0f9cf2c49260a88ed82a3b39d51de8",
+    "assets/old_saloon/cards/doc_holyday.png": "25f9883e1d714c2700c011e351864f7aacc1af299e21363997cac83bd75004cf",
+    "assets/old_saloon/avatars/doc_holyday.png": "cb569a1b4e9cce1e6697e2bd969da304019d27d3092a3d3868e733609ea4670d",
+    "assets/old_saloon/cards/molly_stark.png": "9d0e35c6e65e404dc4e495d3404306ad569f7b8ad561ac81c8c74965cd56f8ca",
+    "assets/old_saloon/avatars/molly_stark.png": "a0ef86e45c44adb4f46dce732974331f270036ef6b22a6c2484b98157dd8aeff",
+    "assets/old_saloon/roles/sheriff_bear.png": "f83ee5238bff2de4d90983934b543a022e00d1e8e3ce926bdc7b07e754157ecb",
+    "assets/old_saloon/roles/deputy_good.png": "4e89e1cf9f21d9cc9c955b17a90afdb9aba1ac6a30ac436a928607104d51c318",
+    "assets/old_saloon/roles/deputy_doc.png": "a0ddd2e83c7174e3560df95feea91072d07b9c4c3133316abd253807f2ec060c",
+    "assets/old_saloon/roles/deputy_judge.png": "531d214d66ecfbe2ea593257d866d2fba821a7a600cc2cbaca9612e53bf292ba",
+    "assets/old_saloon/roles/outlaw_gambler.png": "b1f892155425d7ea625a35d2caaa9f46929a8591f5e1f7f30d76c2fd060def73",
+    "assets/old_saloon/roles/outlaw_bad.png": "56fb5d443c22c092070d56f70520cffe058210de7069bfd56870eedbe0a8571c",
+    "assets/old_saloon/roles/outlaw_ugly.png": "5d984541aa5182d09d3449c11d00307a0e9009522836c9dcb68c30a74e73acff",
+    "assets/old_saloon/roles/renegade_right_hand.png": "c0f7d59b96216238a8653685812796e7579792d48a09b71351fb1ee85ad59f35",
+    "assets/old_saloon/roles/renegade_left_hand.png": "18dac1cecdd9ca2719b1e4a81e1465101913fc833d93dcb104f4ab2f7901823a",
+    "assets/old_saloon/dice/sheets/loudmouth_six_faces_original.png": "ea7e74d57c7d58851d75e81057c12750960c07a3183a07b07a23c495994161d6",
+    "assets/old_saloon/dice/loudmouth/arrow.png": "59dc135620aa18209b4771fc05f10af67c644fe8764809de25f6a7e3537027ec",
+    "assets/old_saloon/dice/loudmouth/bullet.png": "8263003780fda56273fb172b23fc06354f40b03b89aae1ac3267e5b041b5041f",
+    "assets/old_saloon/dice/loudmouth/double_bull1.png": "c3e8a25982376dd0d110881deff3985ef33ac5c60f8b5dc78a4545c5af2a1c47",
+    "assets/old_saloon/dice/loudmouth/double_bull2.png": "c9616c41f503f410dbb5bb206ede94fb43842edc30612bc1c0a73a0427340d0a",
+    "assets/old_saloon/dice/loudmouth/dynamite.png": "fffb800e66cf405c507399ef9d987e3b1259102b57e6ef406a25f5f201a6c8cf",
+    "assets/old_saloon/dice/loudmouth/double_gatling.png": "f45ac7e01d862d07f66de1ba42d05c2725104823c63d65fcc8d8304d30a57933",
+    "assets/old_saloon/dice/sheets/coward_six_faces_original.png": "a22acab3f17f9bfb99403c2fc287a8ab401cbc654471446a040b46959c252319",
+    "assets/old_saloon/dice/coward/arrow.png": "c13d503b3a7366cb2ab500e3a529f8a8d5e34bb6fb87a83c387451b5506bda15",
+    "assets/old_saloon/dice/coward/broken_arrow.png": "2cdc2ae35e9c45ed45e6a653473bcc28782b1c95231e02dad10f25c5ebdef4c6",
+    "assets/old_saloon/dice/coward/bull1.png": "6e8d0759bdbd87cad3051fc01237517e19f1f1799fc4f3269ed0ef0d5be6cc75",
+    "assets/old_saloon/dice/coward/bull2.png": "a9de1a4d8b5f3fa87a272491fb1be126538fdf747a73234366aa33bd7c245dd8",
+    "assets/old_saloon/dice/coward/beer.png": "645996ca58a4317ed8bb09b803c5089ab0c351ce2f5115beb2fc9620d5dce48c",
+    "assets/old_saloon/dice/coward/double_beer.png": "83e644dcd1b748c4227300e644e9dcca08fc05db46a644fc4d902c60fd94987f",
+    "assets/old_saloon/ghost/tokens/arrow.png": "b8966fae886c9c2b4c30db1e45e1e1ba9125e5b783ff96a83958b3052ea50ca3",
+    "assets/old_saloon/ghost/tokens/beer.png": "b9ae16f554be1c3f243f82bd0daa9371d83a473e971288557a4042c2cf7d185e",
+    "assets/old_saloon/ghost/tokens/bull1.png": "4d501a926656780163a9ae7c7be8d3d1f733914a810b84a4d36218095b1fc93f",
+    "assets/old_saloon/ghost/tokens/bull2.png": "eb2b83bd60e4ddc3e07ec8c266595be3f3132177e7092c683507675619dd6fdf",
+    "assets/old_saloon/ghost/tokens/dynamite.png": "7e17538221c9dd6319e45e2c6aafc0d2c660ba1fc2b38200f2c584572d7040c2",
+    "assets/old_saloon/ghost/tokens/gatling.png": "b7226aedb77d0e7618d0c15cda7da80a75b90ad4a096c6580fcf56b7eeb788dc",
+    "assets/old_saloon/ghost/tokens/double.png": "3f020b102225d6cfba2b34707a3ece8794afcbc761c661348ab10df192fd5d90",
+    "assets/old_saloon/arrows/chief_arrow.png": "052d8d11be9db9662174d58f4c2cfc454546818b1e7a478c80bdda90377c3ee5",
+    "assets/old_saloon/ghost/ghost_icon.png": "bfa2896167940b2eeb692d82b5cac6d2eb4662912e6725ec4555efecc94a0590",
+    "assets/old_saloon/ghost/ghost_turn_banner.png": "49b3601636463b9a829e6b4268ab20f3b57a58a3025d07b388d955d59185d5e9",
+    "assets/old_saloon/ghost/ghost_card.png": "df1cc702de38799ce01468c98a18b5afc506b191b7b40e56868733147c5517e4",
+    "assets/old_saloon/ghost/ghost_renegade_card.png": "3eecaa0cebec4bc8297afbe3348a14f23d0ea3ea1ec91f4b10e427de054508c8",
+    "assets/old_saloon/previews/original_overview_1.jpg": "66ae53356ba1e4bddef10829d2d615bb514b63e6416d3b22748dc1d3c4beaeb3",
+    "assets/old_saloon/previews/original_overview_2.jpg": "10b50948dd1775206a21d28ebd94c60297ed507a1a34b4d1a2512429ead27cb3",
+    "assets/old_saloon/previews/original_overview_3.jpg": "20250ae391a29326bcc8ffafded42883282b12821ee8f62b23beee5a645062e4",
+    "assets/old_saloon/previews/original_overview_4.jpg": "cba0325fcdcf495fb5a66339f822ef590e607d6183ca7b1bb5fc9d69701b0125"
+  },
+  "warning": "Expansion game effects have NOT been implemented. The existing 0.8.0 feature-gate blocks selection of unimplemented modules.",
+  "distribution_note": "New expansion artworks downscaled with LANCZOS for Telegram-friendly ZIP; no redesign; separate 2026-10-11 source art export retains full-size originals."
+}

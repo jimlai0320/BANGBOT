@@ -1,0 +1,118 @@
+3 人 AI 測試：8 回合 -> 🏆 電腦3 成為最後存活者！
+4 人 AI 測試：15 回合 -> 🔫 歹徒陣營獲勝！
+5 人 AI 測試：18 回合 -> 🔫 歹徒陣營獲勝！
+6 人 AI 測試：24 回合 -> ⭐ 警長與副警長陣營獲勝！
+7 人 AI 測試：37 回合 -> 🔫 歹徒陣營獲勝！
+8 人 AI 測試：32 回合 -> 🔫 歹徒陣營獲勝！
+SELFTEST OK
+selftest.py PASS
+PASS: 真人雙倍射擊顯示誰打誰、傷害與血量前後變化
+PASS: 機槍攻擊不會被誤認成普通單發
+PASS: 印第安箭雨和死亡會被記錄，舊攻擊仍可看到
+PASS: 炸藥自傷不會被錯記成其他玩家的射擊
+PASS: 角色抵擋傷害時不會誤顯示扣血
+PASS: 保羅格林機槍免疫會清楚顯示擋下
+PASS: 主牌桌 caption 只列最近3次傷害且沒有超出 Telegram 1024 字
+PASS: 3～8人所有牌桌都能顯示戰鬥提示，未移動角色位置
+PASS: 3～8 人共 90 局 AI 對戰，攻擊來源和扣血一致
+COMBAT CLARITY TESTS PASSED
+TEST_combat_clarity.py PASS
+PASS: 公開身分只在淘汰時出現，存活者仍保密
+PASS: 死亡群組通知單次發送，多次刷新不重複
+PASS: 多人同時淘汰合併通知，遊戲結束仍可查身分
+PASS: 每則淘汰公告獨立排程10秒刪除，不阻塞遊戲、不重複公告
+PASS: 三人局所有身分原本就公開
+TEST_death_reveal.py PASS
+PASS: 第一擲印第安箭雨自殺，直接跳至下一存活者
+PASS: 重擲時被箭雨淘汰，自動跳下一位
+PASS: 三顆炸藥炸死當前玩家，自動換人，不處理剩餘骰面
+PASS: 警長自爆，依身分規則立即結束遊戲
+PASS: 三人局自殺切換到兩人決鬥與下一位玩家
+PASS: 3～8 人共 180 局完整 AI 模擬，不停在死者回合
+ALL ELIMINATION TESTS PASSED
+TEST_elimination_turn.py PASS
+PASS test_arrows_all_die_together
+PASS test_sheriff_dead_does_not_skip_others
+PASS test_jourdonnais_min_damage
+PASS test_vulture_dies_before_healing
+PASS test_take_ninth_arrow_all_at_once
+PASS test_animation_installed_and_hooked
+TEST_gatling_arrow_simultaneous.py PASS
+PASS: 逐次跳過 / 一鍵全部跳過 / 手動移箭 / 先移再結束 / 既有結算保留
+TEST_kit_optional.py PASS
+PASS: A/B 玩家獨立私訊清單，重複查詢只更新本人私訊
+PASS: 私訊能力查詢不洩漏其他人的秘密身分；警長公開身分可顯示
+PASS: 非參與玩家無法查看；私訊上一頁正常
+PASS: 群組「查看角色」不會改掉整張共用牌桌按鈕
+TEST_private_character_browser.py PASS
+ROUND TABLE TESTS OK
+TEST_roundtable.py PASS
+PASS: JUDY 幫 FRED 補血：牌桌中央、caption、目標綠標籤同步顯示
+PASS: 自己喝啤酒 +2 與歷史戰況並存
+PASS: 滿血時不會誤報補血
+PASS: 射擊與回血合併最近3次戰況
+PASS: 3~8人48局 AI 完成、補血記錄不超量、結算公開全員身分
+PASS: 箭雨 MP4 存在且真人/AI 程序具動畫觸發點
+ALL V0.7.5 CHECKS PASSED
+TEST_v075_healing.py PASS
+PASS: AI 準心打真人巴特 -> 玩家選擇 -> 同一回合繼續
+PASS: AI 格林機槍打真人巴特 -> 玩家選擇 -> 同次機槍結算後換人
+PASS: 群組僅由受傷者回應、斯萊布可選兩種準心、30秒安全逾時
+TEST_v079_resume.py PASS
+PASS: Bart select shield / direct damage; arrow pool last arrow restriction
+PASS: Pedro select discard 0..N after shot and dynamite
+PASS: Slab choose BULL1 or BULL2 and consume exactly one beer
+PASS: simultaneous Gatling / Vulture death order
+PASS: multi-human damage prompts
+PASS: AI Bart still defends; invalid target responses rejected
+TEST_v079_role_abilities.py PASS
+PASS v0.8.0: base-game setup, 3–8 player module safety, dependencies, 3s reaction model, host-only Telegram lobby controls
+TEST_v080_saloon_foundation.py PASS
+PASS: 8 cards + 8 matching-key avatars, 9 special role art assets
+PASS: 12 individually indexed 900px transparent Saloon dice faces
+PASS: 7 ghost tokens, chief arrow, ghost cards/banner/icon
+PASS: all 55 imported artwork SHA256 checksums verified
+PASS: all 89 original v0.7.9 assets unchanged
+PASS: 五個模組開局驗證，鬼魂維持五人門檻
+TEST_v081_asset_integration.py PASS
+PASS: double-symbol skills, shot order, chief return, invalid rerolls, interrupted roll continuation
+TEST_v0821_regressions.py PASS
+Traceback (most recent call last):
+  File "/workspace/scratch/3e4bdaa88f09/bang_work/BANG_Dice_Bot_v0.8.2/TEST_v082_chief.py", line 39, in <module>
+    assert g.players[0].hp == hp-2, 'tied top arrows must not be immune'
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: tied top arrows must not be immune
+TEST_v082_chief.py FAIL
+PASS: 3-8 players saloon dice, double shots, double gatling, double beer, unimplemented gates
+TEST_v082_playable_saloon_dice.py PASS
+PASS 3 players x15 matches
+PASS 4 players x15 matches
+PASS 5 players x15 matches
+PASS 6 players x15 matches
+PASS 7 players x15 matches
+PASS 8 players x15 matches
+TEST_v082_saloon_ai_stress.py PASS
+PASS 72 full games covering 24 character types; 21 prompt kinds: bart, broken, chief, confirm, dice, doc_die, doc_face, elena, ghost_face, ghost_target, heal, kit, molly, pedro, reaction, roll, shot, sid, slab, swap_first, swap_second
+PASS real Bart callback indices 0/1/2 apply exactly the stated HP/arrow choice
+TEST_v08315_character_choices.py PASS
+PASS 2/5/6 dice, fixed unselected dice, true final results, duration and upload size
+PASS expired Telegram file_id fallback and duplicate-roll suppression
+TEST_v0832_animation.py PASS
+PASS ghost human callbacks: two rerolls, locked dynamite, final symbol selection
+TEST_v0836_ghost_buttons.py PASS
+PASS Telegram callback ownership, game/window tokens, stale clicks, shared 20-second timeout
+TEST_v083_callbacks.py PASS
+PASS module combinations 3
+PASS module combinations 4
+PASS module combinations 5
+PASS module combinations 6
+PASS module combinations 7
+PASS module combinations 8
+PASS new characters, ghost, special roles, deadlines, and 462 complete matches
+TEST_v083_expansion.py PASS
+PASS gambler rollback, prior roll retention, judge cancellation, Holyday and extra turn
+PASS ghost three rolls and locked dynamite
+TEST_v083_transactions.py PASS
+FAILED: TEST_v082_chief.py
+
+RERUN AFTER FIXTURE CORRECTION: TEST_v082_chief.py PASS. All current test scripts passed (others from the full run above). Fixture now excludes unrelated random character damage reduction.

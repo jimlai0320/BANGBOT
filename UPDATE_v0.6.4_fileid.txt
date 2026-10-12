@@ -1,0 +1,33 @@
+BANG Dice Telegram Bot v0.6.4 file_id 版
+
+本次更新：
+1. 新增私訊卡片 file_id 快取
+   - 身分卡與角色卡第一次傳送後，會自動記錄到 telegram_photo_file_ids.json
+   - 之後優先直接用 Telegram file_id 傳送，提高流暢度
+
+2. 新增 /cacheassets 私訊指令
+   - 先私訊 BOT 輸入 /cacheassets
+   - 會把所有身分卡與角色卡先註冊成 Telegram file_id
+   - 第一次會比較慢，之後會明顯順很多
+
+3. 保留原本骰子動畫 file_id 快取機制
+   - 骰子動畫仍使用 dice_tray_animation_file_ids.json
+
+4. 已替換身分卡
+   - 警長 / 副警長 / 歹徒 / 叛徒 改為你確認的剪影版
+
+5. 已安全替換一張已確認角色卡
+   - Lucky Duke / 幸運公爵
+
+已核對規則資料：
+- 3~8 人身分配置：程式原本就是正確的
+- 角色血量 7/8/9：程式原本就是正確的
+- 警長 +2 血：程式原本就有實作
+
+使用建議：
+A. 啟動 BOT
+B. 先私訊 BOT，按 Start
+C. 輸入 /cacheassets
+D. 等待全部登記完成後再開局
+
+之後私訊 /role /character 會比較順。

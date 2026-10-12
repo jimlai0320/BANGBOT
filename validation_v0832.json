@@ -1,0 +1,107 @@
+[
+  {
+    "test": "selftest.py",
+    "passed": true,
+    "output": "3 人 AI 測試：12 回合 -> 🏆 電腦3 獲勝！\n4 人 AI 測試：11 回合 -> 🔫 歹徒陣營獲勝！\n5 人 AI 測試：20 回合 -> ⭐ 警長與副警長陣營獲勝！\n6 人 AI 測試：20 回合 -> 🔫 歹徒陣營獲勝！\n7 人 AI 測試：20 回合 -> ⭐ 警長與副警長陣營獲勝！\n8 人 AI 測試：20 回合 -> 🔫 歹徒陣營獲勝！\nSELFTEST OK\n"
+  },
+  {
+    "test": "TEST_combat_clarity.py",
+    "passed": true,
+    "output": "PASS: 真人雙倍射擊顯示誰打誰、傷害與血量前後變化\nPASS: 機槍攻擊不會被誤認成普通單發\nPASS: 印第安箭雨和死亡會被記錄，舊攻擊仍可看到\nPASS: 炸藥自傷不會被錯記成其他玩家的射擊\nPASS: 角色抵擋傷害時不會誤顯示扣血\nPASS: 保羅格林機槍免疫會清楚顯示擋下\nPASS: 主牌桌 caption 只列最近3次傷害且沒有超出 Telegram 1024 字\nPASS: 3～8人所有牌桌都能顯示戰鬥提示，未移動角色位置\nPASS: 3～8 人共 90 局 AI 對戰，攻擊來源和扣血一致\nCOMBAT CLARITY TESTS PASSED\n"
+  },
+  {
+    "test": "TEST_death_reveal.py",
+    "passed": true,
+    "output": "PASS: 公開身分只在淘汰時出現，存活者仍保密\nPASS: 死亡群組通知單次發送，多次刷新不重複\nPASS: 多人同時淘汰合併通知，遊戲結束仍可查身分\nPASS: 每則淘汰公告獨立排程10秒刪除，不阻塞遊戲、不重複公告\nPASS: 三人局所有身分原本就公開\n"
+  },
+  {
+    "test": "TEST_elimination_turn.py",
+    "passed": true,
+    "output": "PASS: 第一擲印第安箭雨自殺，直接跳至下一存活者\nPASS: 重擲時被箭雨淘汰，自動跳下一位\nPASS: 三顆炸藥炸死當前玩家，自動換人，不處理剩餘骰面\nPASS: 警長自爆，依身分規則立即結束遊戲\nPASS: 三人局自殺切換到兩人決鬥與下一位玩家\nPASS: 3～8 人共 180 局完整 AI 模擬，不停在死者回合\nALL ELIMINATION TESTS PASSED\n"
+  },
+  {
+    "test": "TEST_gatling_arrow_simultaneous.py",
+    "passed": true,
+    "output": "PASS test_arrows_all_die_together\nPASS test_sheriff_dead_does_not_skip_others\nPASS test_jourdonnais_min_damage\nPASS test_vulture_dies_before_healing\nPASS test_take_ninth_arrow_all_at_once\nPASS test_animation_installed_and_hooked\n"
+  },
+  {
+    "test": "TEST_kit_optional.py",
+    "passed": true,
+    "output": "PASS: 逐次跳過 / 一鍵全部跳過 / 手動移箭 / 先移再結束 / 既有結算保留\n"
+  },
+  {
+    "test": "TEST_private_character_browser.py",
+    "passed": true,
+    "output": "PASS: A/B 玩家獨立私訊清單，重複查詢只更新本人私訊\nPASS: 私訊能力查詢不洩漏其他人的秘密身分；警長公開身分可顯示\nPASS: 非參與玩家無法查看；私訊上一頁正常\nPASS: 群組「查看角色」不會改掉整張共用牌桌按鈕\n"
+  },
+  {
+    "test": "TEST_roundtable.py",
+    "passed": true,
+    "output": "ROUND TABLE TESTS OK\n"
+  },
+  {
+    "test": "TEST_v075_healing.py",
+    "passed": true,
+    "output": "PASS: JUDY 幫 FRED 補血：牌桌中央、caption、目標綠標籤同步顯示\nPASS: 自己喝啤酒 +2 與歷史戰況並存\nPASS: 滿血時不會誤報補血\nPASS: 射擊與回血合併最近3次戰況\nPASS: 3~8人48局 AI 完成、補血記錄不超量、結算公開全員身分\nPASS: 箭雨 MP4 存在且真人/AI 程序具動畫觸發點\nALL V0.7.5 CHECKS PASSED\n"
+  },
+  {
+    "test": "TEST_v079_resume.py",
+    "passed": true,
+    "output": "PASS: AI 準心打真人巴特 -> 玩家選擇 -> 同一回合繼續\nPASS: AI 格林機槍打真人巴特 -> 玩家選擇 -> 同次機槍結算後換人\nPASS: 群組僅由受傷者回應、斯萊布可選兩種準心、30秒安全逾時\n"
+  },
+  {
+    "test": "TEST_v079_role_abilities.py",
+    "passed": true,
+    "output": "PASS: Bart select shield / direct damage; arrow pool last arrow restriction\nPASS: Pedro select discard 0..N after shot and dynamite\nPASS: Slab choose BULL1 or BULL2 and consume exactly one beer\nPASS: simultaneous Gatling / Vulture death order\nPASS: multi-human damage prompts\nPASS: AI Bart still defends; invalid target responses rejected\n"
+  },
+  {
+    "test": "TEST_v080_saloon_foundation.py",
+    "passed": true,
+    "output": "PASS v0.8.0: base-game setup, 3–8 player module safety, dependencies, 3s reaction model, host-only Telegram lobby controls\n"
+  },
+  {
+    "test": "TEST_v081_asset_integration.py",
+    "passed": true,
+    "output": "PASS: 8 cards + 8 matching-key avatars, 9 special role art assets\nPASS: 12 individually indexed 900px transparent Saloon dice faces\nPASS: 7 ghost tokens, chief arrow, ghost cards/banner/icon\nPASS: all 55 imported artwork SHA256 checksums verified\nPASS: all 89 original v0.7.9 assets unchanged\nPASS: 五個模組開局驗證，鬼魂維持五人門檻\n"
+  },
+  {
+    "test": "TEST_v0821_regressions.py",
+    "passed": true,
+    "output": "PASS: double-symbol skills, shot order, chief return, invalid rerolls, interrupted roll continuation\n"
+  },
+  {
+    "test": "TEST_v082_chief.py",
+    "passed": true,
+    "output": "PASS: chief 10 tokens, solo leader immunity, tied-top normal damage, human target picker\n"
+  },
+  {
+    "test": "TEST_v082_playable_saloon_dice.py",
+    "passed": true,
+    "output": "PASS: 3-8 players saloon dice, double shots, double gatling, double beer, unimplemented gates\n"
+  },
+  {
+    "test": "TEST_v082_saloon_ai_stress.py",
+    "passed": true,
+    "output": "PASS 3 players x15 matches\nPASS 4 players x15 matches\nPASS 5 players x15 matches\nPASS 6 players x15 matches\nPASS 7 players x15 matches\nPASS 8 players x15 matches\n"
+  },
+  {
+    "test": "TEST_v0832_animation.py",
+    "passed": true,
+    "output": "PASS 2/5/6 dice, fixed unselected dice, true final results, duration and upload size\nPASS expired Telegram file_id fallback and duplicate-roll suppression\n"
+  },
+  {
+    "test": "TEST_v083_callbacks.py",
+    "passed": true,
+    "output": "PASS Telegram callback ownership, game/window tokens, stale clicks, shared 10-second timeout\n"
+  },
+  {
+    "test": "TEST_v083_expansion.py",
+    "passed": true,
+    "output": "PASS module combinations 3\nPASS module combinations 4\nPASS module combinations 5\nPASS module combinations 6\nPASS module combinations 7\nPASS module combinations 8\nPASS new characters, ghost, special roles, deadlines, and 462 complete matches\n"
+  },
+  {
+    "test": "TEST_v083_transactions.py",
+    "passed": true,
+    "output": "PASS gambler rollback, prior roll retention, judge cancellation, Holyday and extra turn\nPASS ghost three rolls and locked dynamite\n"
+  }
+]
