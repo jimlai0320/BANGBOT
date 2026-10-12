@@ -1,0 +1,8 @@
+v0.5.6.1 啟動修正版
+
+修正：
+1. editMessageMedia 上傳新圖片時使用 attach=True，修正 media not found。
+2. Telegram 上傳/讀取 timeout 拉長。
+3. editMessageMedia timeout 或失敗時自動重試，仍失敗則 sendPhoto 重建主牌桌。
+4. 重建成功後會嘗試刪除舊主牌桌，避免群組刷訊息。
+5. UI/3~8 人座標沿用 v0.5.6，不改牌桌排版。

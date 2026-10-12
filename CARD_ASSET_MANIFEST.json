@@ -1,0 +1,69 @@
+{
+  "version": "v0.6.8",
+  "card_art_replaced": {
+    "bart_cassidy": {
+      "sha256": "47391148bd422e50eebe9e80a23190435ece938d0d2d5a7f9ce6120b3f46e2ff",
+      "source": "西部槍手巴特_卡西迪人體藝術卡.png"
+    },
+    "black_jack": {
+      "sha256": "84321e7fa0e73b26c3b039bf42640d3323b0294981efddf0df913e34e4e17290",
+      "source": "黑傑克_西部賭徒角色卡.png"
+    },
+    "calamity_janet": {
+      "sha256": "2995630838d8166f4cd538d97c96b820827e1ef9e91c34b997462de2da0f380b",
+      "source": "災星珍妮特_西部王牌女槍手.png"
+    },
+    "el_gringo": {
+      "sha256": "b6ef652943543fb684d7574e1b754158b56fa083b6ec36a5aa4bdfea5f9855fc",
+      "source": "艾爾_格林哥_荒野槍客卡牌.png"
+    },
+    "jesse_jones": {
+      "sha256": "79c1f280f962987dbc7594e81da376cabd97d4af55b5786f1abcc00ebdc66648",
+      "source": "傑西_瓊斯_西部賭徒卡牌.png"
+    },
+    "jourdonnais": {
+      "sha256": "8879c71e8867fad821cca6dfb63cc69047104808be489fddcab31626de791e45",
+      "source": "喬杜奈斯_荒野弓手卡牌.png"
+    },
+    "kit_carlson": {
+      "sha256": "0ce94e796e658c8ae0454f73f2896367749bed04b90388acb706c06a8eb00f8b",
+      "source": "基特_卡爾森_荒野神槍手.png"
+    },
+    "lucky_duke": {
+      "sha256": "123eb806bd657851ffa6b3ac3a785ca4efb72d353d907f317f349d19191e4b01",
+      "source": "幸運公爵_荒野擲骰傳奇.png"
+    },
+    "paul_regret": {
+      "sha256": "2da002392e746b3c0462da2aa60dc39370dbcc3e2883251fcea8cac5710a9b13",
+      "source": "保羅_雷格瑞特西部槍手卡牌.png"
+    },
+    "rose_doolan": {
+      "sha256": "b51c2067dd4f04d1ac7e058ea5c70a5e9d1a180fe979cab7c2f6febe7169f998",
+      "source": "BANG_rose_doolan_new_candidate.png"
+    },
+    "sid_ketchum": {
+      "sha256": "2e99e6c6bc33822002060e685780501501fe0b3d48cd0a22a89b8e19c37153e9",
+      "source": "西部名醫席德_凱查姆角色卡.png"
+    },
+    "slab_the_killer": {
+      "sha256": "65064514d7c0bab766b22b2eacf5d4b767f1c7824c7e1b7a567ae193910ed167",
+      "source": "西部槍手史萊伯角色卡.png"
+    },
+    "suzy_lafayette": {
+      "sha256": "3a5b4aff897d90940eaface71628ba32cbb8bf816a43c07e5001639ed34bffee",
+      "source": "西部牌卡_蘇西_拉法葉.png"
+    },
+    "vulture_sam": {
+      "sha256": "dff6d5660c285c01d2bf65fc0712d5833c37c874fd69d655f3bed6bddaaec29d",
+      "source": "禿鷹山姆_西部槍手角色卡.png"
+    },
+    "willy_the_kid": {
+      "sha256": "2b57b864296a0b330fccc3f230fa720e5140d638f890adff39e2617c871725b4",
+      "source": "威利小子的西部卡牌人體藝術.png"
+    }
+  },
+  "retained": [
+    "pedro_ramirez"
+  ],
+  "note": "15張已更新成完整西部卡牌，佩德羅原角色卡因新候選人物重複而保留；蘿絲新卡為臨時候選圖，請實測後確認。"
+}
